@@ -1,0 +1,23 @@
+{
+    "61b65f7fb85d6": {
+        "name": "Real Madrid",
+        "city": "Madrid",
+        "id": "61b65f7fb85d6",
+        "img": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/5\/56\/Real_Madrid_CF.svg\/1200px-Real_Madrid_CF.svg.png",
+        "link": "#"
+    },
+    "61b65f96afa94": {
+        "name": "FC Barcelone",
+        "city": "Barcelone",
+        "id": "61b65f96afa94",
+        "img": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/4\/47\/FC_Barcelona_%28crest%29.svg\/1200px-FC_Barcelona_%28crest%29.svg.png",
+        "link": "#"
+    },
+    "61b65fef88e57": {
+        "name": "Ferencv\u00e1rosi",
+        "city": "Budapest IX district",
+        "id": "61b65fef88e57",
+        "img": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/5c\/Ferencv%C3%A1rosiTClog%C3%B3.png",
+        "link": "#"
+    }
+}

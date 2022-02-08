@@ -1,0 +1,28 @@
+{
+    "61ccc03c0320f": {
+        "email": "admin@eltestadium.hu",
+        "username": "admin",
+        "password": "admin",
+        "roles": [
+            "user",
+            "admin"
+        ],
+        "favoriteTeam": [
+            "61b65f96afa94",
+            "61b65fef88e57"
+        ],
+        "id": "61ccc03c0320f"
+    },
+    "61d5ed5358022": {
+        "email": "demo@demo.com",
+        "username": "demo",
+        "password": "demo",
+        "roles": [
+            "user"
+        ],
+        "favoriteTeam": [
+            "61b65fef88e57"
+        ],
+        "id": "61d5ed5358022"
+    }
+}
