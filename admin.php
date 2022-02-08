@@ -27,29 +27,29 @@ if (isset($_POST["submit"])) {
         "id"=>$_GET["id"]
     ]);
     if(isset($_SESSION["team"]) && strlen($_SESSION["team"])>0){
-    header("Location: /assing/teams.php?id=".$_SESSION["team"]);
+    header("Location: /teams.php?id=".$_SESSION["team"]);
     }
     else{
-        header("Location: /assing/");
+        header("Location: /");
     }
  
 }
 if(isset($_POST["back"])){
     if(isset($_SESSION["team"]) && strlen($_SESSION["team"])>0){
-        header("Location: /assing/teams.php?id=".$_SESSION["team"]);
+        header("Location: /teams.php?id=".$_SESSION["team"]);
         }
         else{
-            header("Location: /assing/");
+            header("Location: /");
         }
      
 }
 if(isset($_POST["delete"])){
     $matcheStorage->delete($_GET["id"]);
     if(isset($_SESSION["team"]) && strlen($_SESSION["team"])>0){
-        header("Location: /assing/teams.php?id=".$_SESSION["team"]);
+        header("Location: /teams.php?id=".$_SESSION["team"]);
         }
         else{
-            header("Location: /assing/");
+            header("Location: /");
         }
      ;
 

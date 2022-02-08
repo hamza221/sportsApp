@@ -18,12 +18,12 @@ if (isset($_GET["fav"]) && $user != null) {
   if (($key = array_search($_GET["fav"], $user["favoriteTeam"])) !== false/* in_array($_GET["fav"],$user["favoriteTeam"] )*/) {
     unset($user["favoriteTeam"][$key]);
     $users->update($user["id"], $user);
-    header("Location:/assing/index.php");
+    header("Location: /index.php");
   } else {
     array_push($user["favoriteTeam"], $_GET["fav"]);
     print_r(($user));
     $users->update($user["id"], $user);
-    header("Location:/assing/index.php");
+    header("Location: /index.php");
   }
 }
 function isAdmin()
@@ -102,10 +102,10 @@ usort($matches, function ($a, $b) {
           <h5 class="card-title"><?= $value["name"] ?></h5>
           <p class="card-text"><?= $value["city"] ?></p>
 
-          <a href="\assing\teams.php?id=<?= $value["id"] ?>" class="btn btn-primary">Team page</a>
+          <a href="\teams.php?id=<?= $value["id"] ?>" class="btn btn-primary">Team page</a>
 
 
-          <a class='btn btn-transparent' href="<?php echo ($user != null) ? "/assing/index.php?fav=$key" : "#" ?>"><i class="<?php if ($user != null) {
+          <a class='btn btn-transparent' href="<?php echo ($user != null) ? "/index.php?fav=$key" : "#" ?>"><i class="<?php if ($user != null) {
                                                                                                                                 echo (in_array($key,$user["favoriteTeam"]) ) ? "bi bi-star-fill" : "bi bi-star";
                                                                                                                               } else {
                                                                                                                                 echo "bi bi-star";
@@ -168,7 +168,7 @@ usort($matches, function ($a, $b) {
           <td class ='admin-link'>{$value["home"]["score"]}/{$value["away"]["score"]}</td>
           <td class ='admin-link'>{$value["date"]}</td>";
         if (isAdmin()) {
-          echo "<td ><a class='admin-link' href='/assing/admin.php?id={$value["id"]}'>Edit</a></td>";
+          echo "<td ><a class='admin-link' href='/admin.php?id={$value["id"]}'>Edit</a></td>";
         }
         echo "</tr>";
         $i++;

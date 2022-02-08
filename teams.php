@@ -152,7 +152,7 @@ if (isset($_POST["admRemov"])) {
           <td class ='admin-link'>{$value["home"]["score"]}/{$value["away"]["score"]}</td>
           <td class ='admin-link'>{$value["date"]}</td>";
                 if (isAdmin()) {
-                    echo "<td><a class='admin-link' href='/assing/admin.php?id={$key}'>Edit</a></td>";
+                    echo "<td><a class='admin-link' href='/admin.php?id={$key}'>Edit</a></td>";
                 }
                 echo "</tr>";
                 $i++;

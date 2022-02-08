@@ -54,7 +54,7 @@ if (isset($_POST["submit"])) {
     $newUser["password"]=$password;
     $newUser["roles"]=["user"];
     $users->add($newUser);
-    header("Location: /assing/login.php");
+    header("Location: /login.php");
   }
 }
 

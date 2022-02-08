@@ -39,7 +39,7 @@ if ((count($errors) == 0) && $input ){
 if ($test) {
   $_SESSION["id"] = $id;
   $_SESSION["user"] = $_POST["username"];
-  header("Location: /assing/index.php");
+  header("Location: /index.php");
 }
 
 
